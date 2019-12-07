@@ -1,7 +1,7 @@
-require_relative('./tickets')
-require_relative('./films')
-require_relative('./customers')
 
+require_relative('models/films')
+require_relative('models/customers')
+require_relative('models/tickets')
 require('pry')
 
 # Ticket.delete_all()
@@ -13,7 +13,7 @@ film1 = Film.new({
   'title' => 'Frozen 2',
   'price' => '7.50'
 })
-# film1.save()
+film1.save()
 
 
 # film2 = Film.new({
@@ -41,7 +41,7 @@ customer1 = Customer.new({
   'name' => 'Dylan Fraser',
   'funds' => '20'
 })
-# customer1.save()
+customer1.save()
 
 
 # customer2 = Customer.new({
@@ -79,10 +79,10 @@ customer1 = Customer.new({
 # ticket2.save()
 
 
-ticket3 = Ticket.new({
-  'customer_id' => customer1.id,
-  'film_id' => film1.id
-})
+# ticket3 = Ticket.new({
+#   'customer_id' => customer1.id,
+#   'film_id' => film1.id
+# })
 # ticket3.save()
 
 

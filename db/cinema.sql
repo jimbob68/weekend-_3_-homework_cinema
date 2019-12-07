@@ -1,6 +1,6 @@
 DROP TABLE tickets;
--- DROP TABLE films;
--- DROP TABLE customers;
+DROP TABLE films;
+DROP TABLE customers;
 
 CREATE TABLE tickets (
 id SERIAL PRIMARY KEY,

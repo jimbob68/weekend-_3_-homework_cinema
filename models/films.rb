@@ -11,12 +11,12 @@ class Film
     @price = options['price'].to_i
   end
 
-  # def save()
-  #   sql = "INSERT INTO films (title, price) VALUES ($1, $2) RETURNING id"
-  #   values = [@title, @price]
-  #   film = SqlRunner.run(sql, values).first
-  #   @id = film['id'].to_i
-  # end
+  def save()
+    sql = "INSERT INTO films (title, price) VALUES ($1, $2) RETURNING id"
+    values = [@title, @price]
+    film = SqlRunner.run(sql, values).first
+    @id = film['id'].to_i
+  end
 
   # def update()
   #   sql = "UPDATE films SET (title, price) = ($1, $2) WHERE id = $3"
