@@ -16,12 +16,12 @@ film1 = Film.new({
 film1.save()
 
 
-# film2 = Film.new({
-#   'title' => 'Jumanji the next level',
-#   'price' => '7.50'
-# })
-# film2.save()
-#
+film2 = Film.new({
+  'title' => 'Jumanji the next level',
+  'price' => '7.50'
+})
+film2.save()
+
 #
 # film3 = Film.new({
 #   'title' => 'Star Wars the rise of   Skywalker',
@@ -44,12 +44,12 @@ customer1 = Customer.new({
 customer1.save()
 
 
-# customer2 = Customer.new({
-#   'name' => 'Kelsie Fraser',
-#   'funds' => '40'
-# })
-# customer2.save()
-#
+customer2 = Customer.new({
+  'name' => 'Kelsie Fraser',
+  'funds' => '40'
+})
+customer2.save()
+
 #
 # customer3 = Customer.new({
 #   'name' => 'Maxwell Paterson',
@@ -65,18 +65,18 @@ customer1.save()
 # customer4.save()
 
 
-# ticket1 = Ticket.new({
-#   'customer_id' => customer2.id,
-#   'film_id' => film1.id
-# })
-# ticket1.save()
+ticket1 = Ticket.new({
+  'customer_id' => customer2.id,
+  'film_id' => film1.id
+})
+ticket1.save()
 #
 #
-# ticket2 = Ticket.new({
-#   'customer_id' => customer2.id,
-#   'film_id' => film2.id
-# })
-# ticket2.save()
+ticket2 = Ticket.new({
+  'customer_id' => customer2.id,
+  'film_id' => film2.id
+})
+ticket2.save()
 
 
 # ticket3 = Ticket.new({
